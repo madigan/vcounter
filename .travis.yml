@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - lts/*
+cache: yarn
+script:
+  - yarn build
+deploy:
+  provider: pages
+  local_dir: dist
+  skip_cleanup: true
